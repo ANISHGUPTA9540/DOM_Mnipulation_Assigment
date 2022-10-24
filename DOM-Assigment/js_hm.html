@@ -1,0 +1,69 @@
+document.querySelector(".side-bar .crayons-card .crayons-subtitle-2 ").innerHTML="ANISH GUPTA";
+'ANISH GUPTA'
+document.querySelector(".side-bar .crayons-card .color-base-70 ").innerHTML="Front End Developer";
+'Front End Developer'
+
+
+
+const itemsArr = document.querySelectorAll(".as-imagegrid-item-title");
+const products = [];
+itemsArr.forEach(item => {
+    products.push(item.childNodes[0].textContent.trim());
+});
+console.log(products);
+
+
+
+const parentNav = document.querySelector("#hcfe-content > section > div > div > article > nav");
+const sectionElem = document.createElement('section');
+const h3 = document.createElement('h3');
+const h3Text = document.createTextNode('My New FAQ');
+h3.appendChild(h3Text);
+h3.style.padding = '16px 52px 16px 64px';
+sectionElem.appendChild(h3);
+sectionElem.className = 'parent';
+parentNav.appendChild(sectionElem);
+
+
+
+
+document.querySelector(".details").innerText="+91 6366256689";
+
+
+
+document.querySelector(".diwali-deals-product-sale-pro .diwali-deals-product-sale-btn").innerText = "Check Out";
+
+
+const searchBox = document.querySelector("#app div.glass-search___X4QNv.glass-search-redesign___2yl_k > div > form > input");
+searchBox.addEventListener('mouseover', function() {
+    searchBox.style.backgroundColor = 'red';
+});
+
+
+
+
+
+let search_bar = document.querySelector("#top-nav-search-input").value = "css selectors";
+let submit_form = document.querySelector("#top-nav-search-form");
+submit_form.submit();
+
+
+
+
+
+const parent = document.querySelector("#SIvCob");
+const links = document.querySelectorAll("#SIvCob a");
+links.forEach((link, idx) => {
+    if(idx % 2 === 0) {
+        parent.removeChild(link);
+    }
+});
+
+
+
+
+
+
+
+
+
